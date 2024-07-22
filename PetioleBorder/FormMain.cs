@@ -277,6 +277,33 @@ namespace PetioleBorder
                 // Plotting Zack's line (Topt)
                 gSub.DrawLine(new Pen(new SolidBrush(Color.Yellow),
                     lineThickness), pX, pY, pW, pH);
+
+                // Define the colors and text
+                Color redColor = Color.Red;
+                Color yellowColor = Color.Yellow;
+                string redText = "Zack's Triangle + Cmin";
+                string yellowText = "Zack's Triangle";
+
+                // Define the sizes and positions
+                int squareSize = imgHeight / 100;
+                int margin = 10;
+                var font = new Font("Arial", squareSize-2);
+                var brush = Brushes.WhiteSmoke;
+
+                // Reduce the vertical spacing between squares.
+                int verticalSpacing = -10;
+
+                // Calculate positions
+                int xPosition = margin;
+                int yPosition = bmpResult.Height - squareSize - 2 * margin - 4 * (font.Height + verticalSpacing);
+
+                // Draw the red square and text
+                gSub.FillRectangle(new SolidBrush(redColor), xPosition, yPosition, squareSize, squareSize);
+                gSub.DrawString(redText, font, brush, xPosition + squareSize + margin, yPosition);
+
+                // Draw the yellow square and text
+                gSub.FillRectangle(new SolidBrush(yellowColor), xPosition, yPosition + squareSize + verticalSpacing + font.Height, squareSize, squareSize);
+                gSub.DrawString(yellowText, font, brush, xPosition + squareSize + margin, yPosition + squareSize + verticalSpacing + font.Height);
             }
 
             picResults.Image = bmpResult;
