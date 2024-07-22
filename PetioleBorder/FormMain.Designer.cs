@@ -58,11 +58,11 @@
             this.btnSegmentation = new System.Windows.Forms.Button();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.panelPicSource = new System.Windows.Forms.Panel();
+            this.labLeafName = new System.Windows.Forms.Label();
             this.btnAbout = new System.Windows.Forms.Button();
             this.btnLoadImage = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.picOriginalLeaf = new System.Windows.Forms.PictureBox();
-            this.labLeafName = new System.Windows.Forms.Label();
             this.panelX.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -439,6 +439,16 @@
             this.panelPicSource.Size = new System.Drawing.Size(350, 524);
             this.panelPicSource.TabIndex = 1;
             // 
+            // labLeafName
+            // 
+            this.labLeafName.AutoSize = true;
+            this.labLeafName.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labLeafName.Location = new System.Drawing.Point(16, 448);
+            this.labLeafName.Name = "labLeafName";
+            this.labLeafName.Size = new System.Drawing.Size(170, 18);
+            this.labLeafName.TabIndex = 125;
+            this.labLeafName.Text = "Waiting for a leaf image..";
+            // 
             // btnAbout
             // 
             this.btnAbout.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -484,16 +494,6 @@
             this.picOriginalLeaf.TabStop = false;
             this.picOriginalLeaf.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.picLeafSource_MouseDoubleClick);
             this.picOriginalLeaf.MouseMove += new System.Windows.Forms.MouseEventHandler(this.picLeafSource_MouseMove);
-            // 
-            // labLeafName
-            // 
-            this.labLeafName.AutoSize = true;
-            this.labLeafName.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labLeafName.Location = new System.Drawing.Point(16, 448);
-            this.labLeafName.Name = "labLeafName";
-            this.labLeafName.Size = new System.Drawing.Size(170, 18);
-            this.labLeafName.TabIndex = 125;
-            this.labLeafName.Text = "Waiting for a leaf image..";
             // 
             // FormMain
             // 
