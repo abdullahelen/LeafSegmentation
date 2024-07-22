@@ -12,10 +12,17 @@ Elen, A., & Avuçlu, E. (2021). Automatic detection of petiole border in plant l
 ![Example Image](https://github.com/abdullahelen/LeafSegmentation/blob/master/GUI.png)
 
 ### User Guide
-1. Click on the "Load Image" button to load an image and select one of the sample images to confirm.
-2. When you click the "Segmentation" button, all processes will be executed sequentially.
-3. To zoom in on any image or graph, double-click on it.
+- Click on the "Load Image" button to load an image and select one of the sample images to confirm.
+- When you click the "Segmentation" button, all processes will be executed sequentially.
+- To zoom in on any image or graph, double-click on it.
 
+### Sample Images
+For sample images, please check the `PetioleBorder/SampleImages` directory in this repository.
+
+You can view the images directly using the following links:
+
+- [Sample Image #1](PetioleBorder/SampleImages/AcerCampestre.png)
+- [Sample Image #2](PetioleBorder/SampleImages/GinkgoBiloba.png)
 
 ## Contact
 For any questions or inquiries, please reach out to:
